@@ -1,18 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
+import { HeroeComponent } from './pages/heroe/heroe.component';
+import { HeroesComponent } from './pages/heroes/heroes.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroeComponent,
+    HeroesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, 
+    HttpClientModule
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

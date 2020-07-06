@@ -1,0 +1,26 @@
+.icono {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; }
+
+.icono-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em; }
+
+
+.clean-icon::after {
+    background-image: url('../../../assets/images/clean-icon.svg');
+}
+
+.width-48 {
+  width: 48%;
+}
+
+.width-35 {
+  width: 35%;
+}
